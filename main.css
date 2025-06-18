@@ -1,0 +1,36 @@
+#maingridbody {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 75vh;
+}
+
+#piechartkeygrid {
+    display: grid;
+    grid-template-columns: 1.5em 1fr;
+    grid-template-rows: 1.5em 1fr;
+}
+
+#pageTitle {
+    text-align: center;
+}
+
+.circle {
+      width: 1em;
+      height: 1em;
+      border-radius: 50%; /* Creates the circle effect */
+      border: 2px solid black;
+}
+
+#greencircle {
+    background-color: #00FF00;
+}
+
+#redcircle {
+    background-color: #FF0000;
+}
+
+.marginleft {
+    margin-left: 1em;
+}
+
+

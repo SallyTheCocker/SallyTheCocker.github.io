@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cube Of Strategic Thinking</title>
+    <style>
+      body { margin: 0; }
+    </style>
+    <link rel="stylesheet" href="main.css">
+    <script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.177.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.177.0/examples/jsm/"
+  }
+}
+</script>
+  </head>
+  <body>
+    <script type="module" src="main.js"></script>
+    <h1 id = "pageTitle">Cube Of Strategic Thinking</h1>
+    <br>
+
+    <div class="marginleft" id="maingridbody">
+        <div id="controlschild">
+          <div id="piechartkeygrid">
+            <div class="circle" id="greencircle"></div>
+            <div> = order</div>
+            <div class="circle" id="redcircle"></div>
+            <div> = chaos</div>
+          </div>          
+          <label id="showPieChartCheckboxLabel" for="showPieChartCheckbox"> Show Pie Charts</label>
+          <input id="showPieChartCheckbox" checked="true" type="checkbox"> <br>
+        </div>
+        <div id="displaychild"></div>
+    </div>
+
+    <h3 class="marginleft" id="infotitle">Science Behind the Cube: Ants, Chips and Humans</h2>
+      <p class="marginleft" id="infocontents">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <select hidden name="yOptions" id="yOptions">
+        <option value="systemOption">System</option>
+        <option value="organisationOption">Organisation</option>
+        <option value="managementStyleOption">ManagementStyle</option>
+      </select>
+      <select hidden name="xOptions" id="xOptions">
+        <option value="subsystemsOption">Sub-System</option>
+        <option value="productOptions">Organisation</option>
+        <option value="tasksOption">Tasks/Functions</option>
+      </select>
+      <select hidden name="zOptions" id="zOptions">
+        <option value="supesystemOptions">Super-System</option>
+        <option value="marketOption">Market</option>
+        <option value="resourceOption">Resource</option>
+      </select>
+    
+  </body>
+</html>
