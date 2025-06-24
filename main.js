@@ -211,4 +211,18 @@ function createAxesOptions(axesLabels) {
   var zoptionsobject = new CSS2DObject( zOptions )
   zoptionsobject.center.set(0,-1)
   axesLabels[2].add(zoptionsobject)
-}
+
+  yOptions.onchange = function () {
+    if (yOptions.value == "systemOption") {
+      xOptions.value = "subsystemsOption"
+      zOptions.value = "supersystemOption"
+    } else if (yOptions.value == "organisationOption") {
+      xOptions.value = "productOptions"
+      zOptions.value = "marketOption"
+    } else if (yOptions.value == "managementStyleOption") {
+      xOptions.value = "tasksOption"
+      zOptions.value = "resourceOption"
+    } 
+    labelRenderer.domElement.click()
+  }
+} 
