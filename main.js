@@ -219,7 +219,7 @@ function createAxesOptions(axesLabels) {
     } else if (yOptions.value == "organisationOption") {
       xOptions.value = "productOptions"
       zOptions.value = "marketOption"
-    } else if (yOptions.value == "managementStyleOption") {
+    } else if (yOptions.value == "leadershipStyleOption") {
       xOptions.value = "tasksOption"
       zOptions.value = "resourceOption"
     } 
