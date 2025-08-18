@@ -61,6 +61,20 @@ var axesLabels = addAxesLabels()
 
 const axesOptions = createAxesOptions(axesLabels)
 
+let contentData = {};
+
+async function loadContent() {
+  try {
+    const response = await fetch('descriptions.json');
+    if (!response.ok) throw new Error('Network response was not ok');
+    contentData = await response.json();
+  } catch (err) {
+    console.error('Error loading content:', err);
+  }
+}
+
+loadContent();
+
 var piCharts = createPieCharts()
 piCharts.flat().flat().flat().forEach((e) => scene.add(e));
 
@@ -91,14 +105,16 @@ function onPointerClick(event) {
 
     if (firstObject.userData?.pieChartData) {
       const { value, position } = firstObject.userData.pieChartData;
+      const piechartDescription = contentData.cubes[position[3]][position[4]][position[5]]
       
       const modal = document.getElementById('pieChartModal');
       const infoDiv = document.getElementById('pieChartInfo');
       
       infoDiv.innerHTML = `
-        <p><strong>Value:</strong> ${value}%</p>
-        <p><strong>Position:</strong> X: ${position[3]}, Y: ${position[4]}, Z: ${position[5]}</p>
-        <p><strong>Color:</strong> ${firstObject === firstObject.parent.children[0] ? 'Green (Positive)' : 'Red (Negative)'}</p>
+        <p><strong>Order:</strong> ${value.toFixed(1)}% <strong>  Chaos:</strong> ${(100 - value).toFixed(1)}%  </p>
+        <p><strong>Description:</strong> ${piechartDescription.Description}</p>
+        <p><strong>Problems:</strong> X: ${piechartDescription.Problems}</p>
+        <p><strong>Solutions:</strong> ${piechartDescription.Solutions}</p>
       `;
       
       modal.style.display = 'block';
@@ -144,19 +160,19 @@ function createPieCharts() {
   const longVertDis = .191;
   const dis = .309;
   var arrx0 = [
-    [createPieChartPair(100, [-dis, -dis - longVertDis, -dis, "x0", "y0", "x0"]), createPieChartPair(83.4, [-dis, -dis - longVertDis, 0, "x0", "y0", "z1"]), createPieChartPair(66.7, [-dis, -dis - longVertDis, dis, "x0", "y0" ,"z2"])],
-    [createPieChartPair(83.4, [-dis, 0 - shortVertDis, -dis, "x0", "y1", "x0"]), createPieChartPair(66.7, [-dis, 0 - shortVertDis, 0, "x0" ,"y1" , "z1"]), createPieChartPair(50, [-dis, 0 - shortVertDis, dis, "x0", "y1", "z2"])],
-    [createPieChartPair(66.7, [-dis, dis - longVertDis, -dis, "x0", "y2", "x0"]), createPieChartPair(50, [-dis, dis - longVertDis, 0, "x0" ,"y2", "z1"]), createPieChartPair(33.3, [-dis, dis - longVertDis, dis, "x0" ,"y2" , "z2"])]
+    [createPieChartPair(100, [-dis, -dis - longVertDis, -dis, "x0", "y0", "z0"]), createPieChartPair(83.4, [-dis, -dis - longVertDis, 0, "x0", "y0", "z1"]), createPieChartPair(66.7, [-dis, -dis - longVertDis, dis, "x0", "y0" ,"z2"])],
+    [createPieChartPair(83.4, [-dis, 0 - shortVertDis, -dis, "x0", "y1", "z0"]), createPieChartPair(66.7, [-dis, 0 - shortVertDis, 0, "x0" ,"y1" , "z1"]), createPieChartPair(50, [-dis, 0 - shortVertDis, dis, "x0", "y1", "z2"])],
+    [createPieChartPair(66.7, [-dis, dis - longVertDis, -dis, "x0", "y2", "z0"]), createPieChartPair(50, [-dis, dis - longVertDis, 0, "x0" ,"y2", "z1"]), createPieChartPair(33.3, [-dis, dis - longVertDis, dis, "x0" ,"y2" , "z2"])]
   ]
   var arrx1 = [
-    [createPieChartPair(83.4, [0, -dis - longVertDis, -dis, "x1", "y0" ,"x0"]), createPieChartPair(66.7, [0, -dis - longVertDis, 0,"x1" ,"y0", "z1"]), createPieChartPair(50, [0, -dis - longVertDis, dis, "x1","y0","z2"])],
-    [createPieChartPair(66.7, [0, 0 - shortVertDis, -dis, "x1", "y1", "x0"]), createPieChartPair(50, [0, 0 - shortVertDis, 0,"x1","y1","z1"]), createPieChartPair(33.3, [0, 0 - shortVertDis, dis,"x1","y1","z2"])],
-    [createPieChartPair(50, [0, dis - longVertDis, -dis, "x1", "y2", "x0"]), createPieChartPair(33.3, [0, dis - longVertDis, 0,"x1","y2","z1"]), createPieChartPair(16.7, [0, dis - longVertDis, dis,"x1","y2","z2"])]
+    [createPieChartPair(83.4, [0, -dis - longVertDis, -dis, "x1", "y0" ,"z0"]), createPieChartPair(66.7, [0, -dis - longVertDis, 0,"x1" ,"y0", "z1"]), createPieChartPair(50, [0, -dis - longVertDis, dis, "x1","y0","z2"])],
+    [createPieChartPair(66.7, [0, 0 - shortVertDis, -dis, "x1", "y1", "z0"]), createPieChartPair(50, [0, 0 - shortVertDis, 0,"x1","y1","z1"]), createPieChartPair(33.3, [0, 0 - shortVertDis, dis,"x1","y1","z2"])],
+    [createPieChartPair(50, [0, dis - longVertDis, -dis, "x1", "y2", "z0"]), createPieChartPair(33.3, [0, dis - longVertDis, 0,"x1","y2","z1"]), createPieChartPair(16.7, [0, dis - longVertDis, dis,"x1","y2","z2"])]
   ]
   var arrx2 = [
-    [createPieChartPair(66.7, [dis, -dis - longVertDis, -dis,"x2","y0","x0"]), createPieChartPair(50, [dis, -dis - longVertDis, 0,"x2","y0","z1"]), createPieChartPair(33.3, [dis, -dis - longVertDis, dis,"x2","y0","z2"])],
-    [createPieChartPair(50, [dis, 0 - shortVertDis, -dis,"x2","y1","x0"]), createPieChartPair(33.3, [dis, 0 - shortVertDis, 0,"x2","y1","z1"]), createPieChartPair(16.7, [dis, 0 - shortVertDis, dis,"x2","y1","z2"])],
-    [createPieChartPair(33.3, [dis, dis - longVertDis, -dis,"x2","y2","x0"]), createPieChartPair(16.7, [dis, dis - longVertDis, 0,"x2","y2","z1"]), createPieChartPair(0, [dis, dis - longVertDis, dis,"x2","y2","z2"])]
+    [createPieChartPair(66.7, [dis, -dis - longVertDis, -dis,"x2","y0","z0"]), createPieChartPair(50, [dis, -dis - longVertDis, 0,"x2","y0","z1"]), createPieChartPair(33.3, [dis, -dis - longVertDis, dis,"x2","y0","z2"])],
+    [createPieChartPair(50, [dis, 0 - shortVertDis, -dis,"x2","y1","z0"]), createPieChartPair(33.3, [dis, 0 - shortVertDis, 0,"x2","y1","z1"]), createPieChartPair(16.7, [dis, 0 - shortVertDis, dis,"x2","y1","z2"])],
+    [createPieChartPair(33.3, [dis, dis - longVertDis, -dis,"x2","y2","z0"]), createPieChartPair(16.7, [dis, dis - longVertDis, 0,"x2","y2","z1"]), createPieChartPair(0, [dis, dis - longVertDis, dis,"x2","y2","z2"])]
   ]
 
   return [arrx0, arrx1, arrx2]
@@ -178,7 +194,7 @@ function createPieChartPair(greenSize, position) {
   negcircle.position.set(position[0], position[1], position[2])
 
   poscircle.userData.pieChartData = { value: greenSize, position: [...position] };
-  negcircle.userData.pieChartData = { value: 100 - greenSize, position: [...position] };
+  negcircle.userData.pieChartData = { value: greenSize, position: [...position] };
 
   return [poscircle, negcircle]
 }
