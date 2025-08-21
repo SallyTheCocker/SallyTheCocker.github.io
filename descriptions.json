@@ -1,161 +1,485 @@
 {
   "cubes": {
-    "x0": {
-      "y0": {
-        "z0": {
-          "Description": "Core system functionality",
-          "Problems": ["Legacy code", "Technical debt"],
-          "Solutions": ["Refactoring", "Modernization"]
+    "System": {
+      "x0": {
+        "y0": {
+          "z0": {
+            "Description": "Core system functionality",
+            "Problems": "Legacy code, Technical debt",
+            "Solutions": "Refactoring, Modernization"
+          },
+          "z1": {
+            "Description": "System interface layer",
+            "Problems": "Inconsistent APIs, Poor documentation",
+            "Solutions": "Standardization, Improved docs"
+          },
+          "z2": {
+            "Description": "System external interactions",
+            "Problems": "Unreliable partners, Rate limiting",
+            "Solutions": "Partner management, Caching"
+          }
         },
-        "z1": {
-          "Description": "System interface layer",
-          "Problems": ["Inconsistent APIs", "Poor documentation"],
-          "Solutions": ["Standardization", "Improved docs"]
+        "y1": {
+          "z0": {
+            "Description": "Core operational processes",
+            "Problems": "Manual steps, Bottlenecks",
+            "Solutions": "Automation, Process redesign"
+          },
+          "z1": {
+            "Description": "Coordination processes",
+            "Problems": "Siloed teams, Miscommunication",
+            "Solutions": "Cross-training, Better tools"
+          },
+          "z2": {
+            "Description": "Customer-facing processes",
+            "Problems": "Long wait times, Complex workflows",
+            "Solutions": "Simplification, Self-service"
+          }
         },
-        "z2": {
-          "Description": "System external interactions",
-          "Problems": ["Unreliable partners", "Rate limiting"],
-          "Solutions": ["Partner management", "Caching"]
+        "y2": {
+          "z0": {
+            "Description": "Leadership vision",
+            "Problems": "Unclear direction, Changing priorities",
+            "Solutions": "Strategic planning, Roadmapping"
+          },
+          "z1": {
+            "Description": "Management execution",
+            "Problems": "Resource constraints, Skill gaps",
+            "Solutions": "Training, Prioritization"
+          },
+          "z2": {
+            "Description": "Team dynamics",
+            "Problems": "Low morale, Turnover",
+            "Solutions": "Recognition, Career paths"
+          }
         }
       },
-      "y1": {
-        "z0": {
-          "Description": "Core operational processes",
-          "Problems": ["Manual steps", "Bottlenecks"],
-          "Solutions": ["Automation", "Process redesign"]
+      "x1": {
+        "y0": {
+          "z0": {
+            "Description": "Product core features",
+            "Problems": "Missing functionality, Bugs",
+            "Solutions": "New development, QA process"
+          },
+          "z1": {
+            "Description": "Product integrations",
+            "Problems": "Compatibility issues, Performance",
+            "Solutions": "API improvements, Optimization"
+          },
+          "z2": {
+            "Description": "Product ecosystem",
+            "Problems": "Limited extensions, Few partners",
+            "Solutions": "SDK development, Partner program"
+          }
         },
-        "z1": {
-          "Description": "Coordination processes",
-          "Problems": ["Siloed teams", "Miscommunication"],
-          "Solutions": ["Cross-training", "Better tools"]
+        "y1": {
+          "z0": {
+            "Description": "Department operations",
+            "Problems": "Inefficient workflows, Duplication",
+            "Solutions": "Workflow analysis, Tool consolidation"
+          },
+          "z1": {
+            "Description": "Cross-department collaboration",
+            "Problems": "Conflicting goals, Budget fights",
+            "Solutions": "Shared KPIs, Joint planning"
+          },
+          "z2": {
+            "Description": "Customer support",
+            "Problems": "Slow response, Knowledge gaps",
+            "Solutions": "Knowledge base, Tiered support"
+          }
         },
-        "z2": {
-          "Description": "Customer-facing processes",
-          "Problems": ["Long wait times", "Complex workflows"],
-          "Solutions": ["Simplification", "Self-service"]
+        "y2": {
+          "z0": {
+            "Description": "Executive alignment",
+            "Problems": "Differing visions, Power struggles",
+            "Solutions": "Offsite meetings, Mediation"
+          },
+          "z1": {
+            "Description": "Middle management",
+            "Problems": "Micromanagement, Poor delegation",
+            "Solutions": "Leadership training, Empowerment"
+          },
+          "z2": {
+            "Description": "Frontline employees",
+            "Problems": "Burnout, Disengagement",
+            "Solutions": "Work-life balance, Growth opportunities"
+          }
         }
       },
-      "y2": {
-        "z0": {
-          "Description": "Leadership vision",
-          "Problems": ["Unclear direction", "Changing priorities"],
-          "Solutions": ["Strategic planning", "Roadmapping"]
+      "x2": {
+        "y0": {
+          "z0": {
+            "Description": "Market positioning",
+            "Problems": "Unclear value prop, Strong competitors",
+            "Solutions": "Messaging, Differentiation"
+          },
+          "z1": {
+            "Description": "Sales channels",
+            "Problems": "Leaky funnel, Poor conversion",
+            "Solutions": "Process improvement, Sales training"
+          },
+          "z2": {
+            "Description": "Customer segments",
+            "Problems": "Narrow focus, Changing needs",
+            "Solutions": "Market research, Segmentation"
+          }
         },
-        "z1": {
-          "Description": "Management execution",
-          "Problems": ["Resource constraints", "Skill gaps"],
-          "Solutions": ["Training", "Prioritization"]
+        "y1": {
+          "z0": {
+            "Description": "Local operations",
+            "Problems": "Regulatory hurdles, Cultural differences",
+            "Solutions": "Local experts, Adaptation"
+          },
+          "z1": {
+            "Description": "Regional strategy",
+            "Problems": "Inconsistent execution, Coordination",
+            "Solutions": "Playbooks, Regional managers"
+          },
+          "z2": {
+            "Description": "Global presence",
+            "Problems": "Time zones, Language barriers",
+            "Solutions": "Follow-the-sun, Localization"
+          }
         },
-        "z2": {
-          "Description": "Team dynamics",
-          "Problems": ["Low morale", "Turnover"],
-          "Solutions": ["Recognition", "Career paths"]
+        "y2": {
+          "z0": {
+            "Description": "Industry trends",
+            "Problems": "Disruption, New technologies",
+            "Solutions": "Innovation team, Acquisitions"
+          },
+          "z1": {
+            "Description": "Economic factors",
+            "Problems": "Recession, Supply chain",
+            "Solutions": "Diversification, Inventory management"
+          },
+          "z2": {
+            "Description": "Societal impact",
+            "Problems": "Reputation issues, ESG requirements",
+            "Solutions": "CSR programs, Sustainability"
+          }
         }
       }
     },
-    "x1": {
-      "y0": {
-        "z0": {
-          "Description": "Product core features",
-          "Problems": ["Missing functionality", "Bugs"],
-          "Solutions": ["New development", "QA process"]
+    "Organisation": {
+      "x0": {
+        "y0": {
+          "z0": {
+            "Description": "Core system functionality",
+            "Problems": "Legacy code, Technical debt",
+            "Solutions": "Refactoring, Modernization"
+          },
+          "z1": {
+            "Description": "System interface layer",
+            "Problems": "Inconsistent APIs, Poor documentation",
+            "Solutions": "Standardization, Improved docs"
+          },
+          "z2": {
+            "Description": "System external interactions",
+            "Problems": "Unreliable partners, Rate limiting",
+            "Solutions": "Partner management, Caching"
+          }
         },
-        "z1": {
-          "Description": "Product integrations",
-          "Problems": ["Compatibility issues", "Performance"],
-          "Solutions": ["API improvements", "Optimization"]
+        "y1": {
+          "z0": {
+            "Description": "Core operational processes",
+            "Problems": "Manual steps, Bottlenecks",
+            "Solutions": "Automation, Process redesign"
+          },
+          "z1": {
+            "Description": "Coordination processes",
+            "Problems": "Siloed teams, Miscommunication",
+            "Solutions": "Cross-training, Better tools"
+          },
+          "z2": {
+            "Description": "Customer-facing processes",
+            "Problems": "Long wait times, Complex workflows",
+            "Solutions": "Simplification, Self-service"
+          }
         },
-        "z2": {
-          "Description": "Product ecosystem",
-          "Problems": ["Limited extensions", "Few partners"],
-          "Solutions": ["SDK development", "Partner program"]
+        "y2": {
+          "z0": {
+            "Description": "Leadership vision",
+            "Problems": "Unclear direction, Changing priorities",
+            "Solutions": "Strategic planning, Roadmapping"
+          },
+          "z1": {
+            "Description": "Management execution",
+            "Problems": "Resource constraints, Skill gaps",
+            "Solutions": "Training, Prioritization"
+          },
+          "z2": {
+            "Description": "Team dynamics",
+            "Problems": "Low morale, Turnover",
+            "Solutions": "Recognition, Career paths"
+          }
         }
       },
-      "y1": {
-        "z0": {
-          "Description": "Department operations",
-          "Problems": ["Inefficient workflows", "Duplication"],
-          "Solutions": ["Workflow analysis", "Tool consolidation"]
+      "x1": {
+        "y0": {
+          "z0": {
+            "Description": "Product core features",
+            "Problems": "Missing functionality, Bugs",
+            "Solutions": "New development, QA process"
+          },
+          "z1": {
+            "Description": "Product integrations",
+            "Problems": "Compatibility issues, Performance",
+            "Solutions": "API improvements, Optimization"
+          },
+          "z2": {
+            "Description": "Product ecosystem",
+            "Problems": "Limited extensions, Few partners",
+            "Solutions": "SDK development, Partner program"
+          }
         },
-        "z1": {
-          "Description": "Cross-department collaboration",
-          "Problems": ["Conflicting goals", "Budget fights"],
-          "Solutions": ["Shared KPIs", "Joint planning"]
+        "y1": {
+          "z0": {
+            "Description": "Department operations",
+            "Problems": "Inefficient workflows, Duplication",
+            "Solutions": "Workflow analysis, Tool consolidation"
+          },
+          "z1": {
+            "Description": "Cross-department collaboration",
+            "Problems": "Conflicting goals, Budget fights",
+            "Solutions": "Shared KPIs, Joint planning"
+          },
+          "z2": {
+            "Description": "Customer support",
+            "Problems": "Slow response, Knowledge gaps",
+            "Solutions": "Knowledge base, Tiered support"
+          }
         },
-        "z2": {
-          "Description": "Customer support",
-          "Problems": ["Slow response", "Knowledge gaps"],
-          "Solutions": ["Knowledge base", "Tiered support"]
+        "y2": {
+          "z0": {
+            "Description": "Executive alignment",
+            "Problems": "Differing visions, Power struggles",
+            "Solutions": "Offsite meetings, Mediation"
+          },
+          "z1": {
+            "Description": "Middle management",
+            "Problems": "Micromanagement, Poor delegation",
+            "Solutions": "Leadership training, Empowerment"
+          },
+          "z2": {
+            "Description": "Frontline employees",
+            "Problems": "Burnout, Disengagement",
+            "Solutions": "Work-life balance, Growth opportunities"
+          }
         }
       },
-      "y2": {
-        "z0": {
-          "Description": "Executive alignment",
-          "Problems": ["Differing visions", "Power struggles"],
-          "Solutions": ["Offsite meetings", "Mediation"]
+      "x2": {
+        "y0": {
+          "z0": {
+            "Description": "Market positioning",
+            "Problems": "Unclear value prop, Strong competitors",
+            "Solutions": "Messaging, Differentiation"
+          },
+          "z1": {
+            "Description": "Sales channels",
+            "Problems": "Leaky funnel, Poor conversion",
+            "Solutions": "Process improvement, Sales training"
+          },
+          "z2": {
+            "Description": "Customer segments",
+            "Problems": "Narrow focus, Changing needs",
+            "Solutions": "Market research, Segmentation"
+          }
         },
-        "z1": {
-          "Description": "Middle management",
-          "Problems": ["Micromanagement", "Poor delegation"],
-          "Solutions": ["Leadership training", "Empowerment"]
+        "y1": {
+          "z0": {
+            "Description": "Local operations",
+            "Problems": "Regulatory hurdles, Cultural differences",
+            "Solutions": "Local experts, Adaptation"
+          },
+          "z1": {
+            "Description": "Regional strategy",
+            "Problems": "Inconsistent execution, Coordination",
+            "Solutions": "Playbooks, Regional managers"
+          },
+          "z2": {
+            "Description": "Global presence",
+            "Problems": "Time zones, Language barriers",
+            "Solutions": "Follow-the-sun, Localization"
+          }
         },
-        "z2": {
-          "Description": "Frontline employees",
-          "Problems": ["Burnout", "Disengagement"],
-          "Solutions": ["Work-life balance", "Growth opportunities"]
+        "y2": {
+          "z0": {
+            "Description": "Industry trends",
+            "Problems": "Disruption, New technologies",
+            "Solutions": "Innovation team, Acquisitions"
+          },
+          "z1": {
+            "Description": "Economic factors",
+            "Problems": "Recession, Supply chain",
+            "Solutions": "Diversification, Inventory management"
+          },
+          "z2": {
+            "Description": "Societal impact",
+            "Problems": "Reputation issues, ESG requirements",
+            "Solutions": "CSR programs, Sustainability"
+          }
         }
       }
     },
-    "x2": {
-      "y0": {
-        "z0": {
-          "Description": "Market positioning",
-          "Problems": ["Unclear value prop", "Strong competitors"],
-          "Solutions": ["Messaging", "Differentiation"]
+    "TeamLeadership": {
+      "x0": {
+        "y0": {
+          "z0": {
+            "Description": "Core system functionality",
+            "Problems": "Legacy code, Technical debt",
+            "Solutions": "Refactoring, Modernization"
+          },
+          "z1": {
+            "Description": "System interface layer",
+            "Problems": "Inconsistent APIs, Poor documentation",
+            "Solutions": "Standardization, Improved docs"
+          },
+          "z2": {
+            "Description": "System external interactions",
+            "Problems": "Unreliable partners, Rate limiting",
+            "Solutions": "Partner management, Caching"
+          }
         },
-        "z1": {
-          "Description": "Sales channels",
-          "Problems": ["Leaky funnel", "Poor conversion"],
-          "Solutions": ["Process improvement", "Sales training"]
+        "y1": {
+          "z0": {
+            "Description": "Core operational processes",
+            "Problems": "Manual steps, Bottlenecks",
+            "Solutions": "Automation, Process redesign"
+          },
+          "z1": {
+            "Description": "Coordination processes",
+            "Problems": "Siloed teams, Miscommunication",
+            "Solutions": "Cross-training, Better tools"
+          },
+          "z2": {
+            "Description": "Customer-facing processes",
+            "Problems": "Long wait times, Complex workflows",
+            "Solutions": "Simplification, Self-service"
+          }
         },
-        "z2": {
-          "Description": "Customer segments",
-          "Problems": ["Narrow focus", "Changing needs"],
-          "Solutions": ["Market research", "Segmentation"]
+        "y2": {
+          "z0": {
+            "Description": "Leadership vision",
+            "Problems": "Unclear direction, Changing priorities",
+            "Solutions": "Strategic planning, Roadmapping"
+          },
+          "z1": {
+            "Description": "Management execution",
+            "Problems": "Resource constraints, Skill gaps",
+            "Solutions": "Training, Prioritization"
+          },
+          "z2": {
+            "Description": "Team dynamics",
+            "Problems": "Low morale, Turnover",
+            "Solutions": "Recognition, Career paths"
+          }
         }
       },
-      "y1": {
-        "z0": {
-          "Description": "Local operations",
-          "Problems": ["Regulatory hurdles", "Cultural differences"],
-          "Solutions": ["Local experts", "Adaptation"]
+      "x1": {
+        "y0": {
+          "z0": {
+            "Description": "Product core features",
+            "Problems": "Missing functionality, Bugs",
+            "Solutions": "New development, QA process"
+          },
+          "z1": {
+            "Description": "Product integrations",
+            "Problems": "Compatibility issues, Performance",
+            "Solutions": "API improvements, Optimization"
+          },
+          "z2": {
+            "Description": "Product ecosystem",
+            "Problems": "Limited extensions, Few partners",
+            "Solutions": "SDK development, Partner program"
+          }
         },
-        "z1": {
-          "Description": "Regional strategy",
-          "Problems": ["Inconsistent execution", "Coordination"],
-          "Solutions": ["Playbooks", "Regional managers"]
+        "y1": {
+          "z0": {
+            "Description": "Department operations",
+            "Problems": "Inefficient workflows, Duplication",
+            "Solutions": "Workflow analysis, Tool consolidation"
+          },
+          "z1": {
+            "Description": "Cross-department collaboration",
+            "Problems": "Conflicting goals, Budget fights",
+            "Solutions": "Shared KPIs, Joint planning"
+          },
+          "z2": {
+            "Description": "Customer support",
+            "Problems": "Slow response, Knowledge gaps",
+            "Solutions": "Knowledge base, Tiered support"
+          }
         },
-        "z2": {
-          "Description": "Global presence",
-          "Problems": ["Time zones", "Language barriers"],
-          "Solutions": ["Follow-the-sun", "Localization"]
+        "y2": {
+          "z0": {
+            "Description": "Executive alignment",
+            "Problems": "Differing visions, Power struggles",
+            "Solutions": "Offsite meetings, Mediation"
+          },
+          "z1": {
+            "Description": "Middle management",
+            "Problems": "Micromanagement, Poor delegation",
+            "Solutions": "Leadership training, Empowerment"
+          },
+          "z2": {
+            "Description": "Frontline employees",
+            "Problems": "Burnout, Disengagement",
+            "Solutions": "Work-life balance, Growth opportunities"
+          }
         }
       },
-      "y2": {
-        "z0": {
-          "Description": "Industry trends",
-          "Problems": ["Disruption", "New technologies"],
-          "Solutions": ["Innovation team", "Acquisitions"]
+      "x2": {
+        "y0": {
+          "z0": {
+            "Description": "Market positioning",
+            "Problems": "Unclear value prop, Strong competitors",
+            "Solutions": "Messaging, Differentiation"
+          },
+          "z1": {
+            "Description": "Sales channels",
+            "Problems": "Leaky funnel, Poor conversion",
+            "Solutions": "Process improvement, Sales training"
+          },
+          "z2": {
+            "Description": "Customer segments",
+            "Problems": "Narrow focus, Changing needs",
+            "Solutions": "Market research, Segmentation"
+          }
         },
-        "z1": {
-          "Description": "Economic factors",
-          "Problems": ["Recession", "Supply chain"],
-          "Solutions": ["Diversification", "Inventory management"]
+        "y1": {
+          "z0": {
+            "Description": "Local operations",
+            "Problems": "Regulatory hurdles, Cultural differences",
+            "Solutions": "Local experts, Adaptation"
+          },
+          "z1": {
+            "Description": "Regional strategy",
+            "Problems": "Inconsistent execution, Coordination",
+            "Solutions": "Playbooks, Regional managers"
+          },
+          "z2": {
+            "Description": "Global presence",
+            "Problems": "Time zones, Language barriers",
+            "Solutions": "Follow-the-sun, Localization"
+          }
         },
-        "z2": {
-          "Description": "Societal impact",
-          "Problems": ["Reputation issues", "ESG requirements"],
-          "Solutions": ["CSR programs", "Sustainability"]
+        "y2": {
+          "z0": {
+            "Description": "Industry trends",
+            "Problems": "Disruption, New technologies",
+            "Solutions": "Innovation team, Acquisitions"
+          },
+          "z1": {
+            "Description": "Economic factors",
+            "Problems": "Recession, Supply chain",
+            "Solutions": "Diversification, Inventory management"
+          },
+          "z2": {
+            "Description": "Societal impact",
+            "Problems": "Reputation issues, ESG requirements",
+            "Solutions": "CSR programs, Sustainability"
+          }
         }
       }
     }
